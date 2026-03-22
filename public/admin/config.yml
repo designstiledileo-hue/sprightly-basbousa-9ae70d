@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: designstiledileo-hue/sprightly-basbousa-9ae70d
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: portfolio
+    label: Portfolio
+    folder: src/content/portfolio
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: Location, name: location, widget: string }
+      - { label: Description, name: description, widget: text, required: false }
